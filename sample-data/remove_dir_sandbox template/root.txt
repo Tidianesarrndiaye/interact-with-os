@@ -1,0 +1,1 @@
+Fichier racine pour tester remove_dir.

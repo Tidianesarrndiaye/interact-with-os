@@ -1,0 +1,1 @@
+Fichier dans un sous-dossier pour tester la suppression récursive.
