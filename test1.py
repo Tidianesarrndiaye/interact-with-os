@@ -1,4 +1,3 @@
-import os
 import csv
 
 # Create a file with data in it
@@ -33,4 +32,4 @@ def contents_of_file(filename):
   return return_string
 
 #Call the function
-print(contents_of_file("flowers.csv"))
+print(contents_of_file("sample-data/flowers.csv"))
