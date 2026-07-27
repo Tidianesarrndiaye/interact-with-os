@@ -1,3 +1,7 @@
+import sys
+
+
+
 def to_seconds(hours, minutes, seconds):
     return hours*3600+minutes*60+seconds
 
@@ -30,3 +34,20 @@ export FRUIT=Pineapple
 ./variables.py
 
 """
+
+
+##commande line Arguments and Exits status  
+#command line arguments are the arguments passed to a program when it is invoked from the command line. In Python, you can access these arguments using the sys module. The sys.argv list contains the command line arguments, with sys.argv[0] being the name of the script and subsequent elements being the additional arguments.
+#Example:
+#l'importation du module sys en top
+
+print("Listes des arguments de la ligne de commande :", sys.argv,sep="\n")
+
+# Exit status is a way for a program to communicate its success or failure to the operating system or calling process. In Python, you can use the sys.exit() function to exit a program and provide an exit status code. By convention, an exit status of 0 indicates success, while any non-zero value indicates an error or failure.
+
+#Example:
+if len(sys.argv) < 2:
+    print("Usage: python script.py <arg1> <arg2> ...")
+    sys.exit(1)  # Exit with a non-zero status code to indicate an error
+    
+    
